@@ -1,0 +1,230 @@
+
+.background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    z-index: -1;
+  } 
+.background_img_prediction {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+} 
+
+.container_box {
+    width: 60%;
+    padding: 10px 30px;
+    text-align: left;
+}
+
+
+
+h1 {
+    color: #454545 ;
+    /* #606C5D; */
+    font-size: 70px;
+    padding: 35px 0;
+    font-weight: bold;
+    font-family: serif;
+}
+
+p {
+    color: #606C5D;
+    font-size: 20px;
+    font-family: serif;
+    font-weight:bold;
+}
+
+.paragraph_text{
+    padding-bottom: 30px;
+}
+
+.paragraph_text_prediction{
+  font-size: 30px;
+}
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #454545;
+  outline: 0;
+  font-size: 20px;
+  color: #606C5D;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #606C5D;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #454545;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 500;
+  border-width: 3px;
+  border-image: #454545;
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+.form__group {
+  display: flex; /* Add flex display for aligning items */
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 80%;
+}
+
+.form__field {
+  flex: 1; /* Make the input field grow to fill available space */
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #454545;
+  outline: 0;
+  font-size: 20px;
+  color: #606C5D;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #606C5D;
+}
+.btn {
+    font-family: inherit;
+    font-size: 20px;
+    color: #606C5D;
+    padding: 7px 15px;
+    background: transparent;
+    border: none;
+    border-radius: 50px; /* Set border-radius to create an oval shape */
+    transition: background-color 0.2s;
+  }
+  
+  .btn-transparent {
+    background-color: transparent;
+    border: 2px solid #454545;
+  }
+  
+  .btn-oval {
+    margin-left: 10px; /* Adjust the spacing between the input field and the button */
+    /* background-image: linear-gradient(to right, #11998e, #38ef7d); */
+    color: #454545;
+  }
+  
+  .btn-oval:hover {
+    background-image: #454545;
+  }
+
+  .card {
+    /* background-color: var(--background); */
+    display: block;
+    width: 300px;
+    min-height: 90px;
+    border: 3px solid var(--primary);
+    padding: 15px;
+    margin: calc(50vh - 30px) auto 0 auto;
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+          20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 
+          30px -30px 0 -3px var(--background), 30px -30px var(--orange), 
+          40px -40px 0 -3px var(--background), 40px -40px var(--red); 
+    transition: box-shadow 1s, top 1s, left 1s;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    top: -40px;
+    left: 40px;
+    box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+        0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
+        0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+        0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
+  }
+  :root {
+    --primary: #555BFF;
+    --secondary: #22D2A0;
+    --background: #fff;
+    --green: #1FC11B;
+    --yellow: #FFD913;
+    --orange: #FF9C55;
+    --red: #FF5555;
+  } 
+  .pred-body {
+    /* background-image: radial-gradient(var(--secondary) 30%, var(--background) 30%); */
+    background-size: 2px 3px;
+    font-family: "Archivo", sans-serif;
+    color: var(--primary);
+  }
+  
+  .card p {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 14px;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: normal;
+  }
