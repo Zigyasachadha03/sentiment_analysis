@@ -48,11 +48,13 @@ A Flask-based web application is built to provide an interface for users to inpu
 To use this project, follow these steps:
 
 1. Clone the repository:
-' git clone https://github.com/your-username/sentiment-analysis-project.git '
+```
+git clone https://github.com/Zigyasachadha03/sentiment_analysis.git
+```
 
 2. Download the Twitter dataset from Kaggle's website and place it in the appropriate folder within the repository.
 
-3. Install the required dependencies specified in the `requirements.txt` file.
+3. Install the required dependencies.
 
 4. Preprocess the dataset and train the models using the provided code.
 
@@ -61,8 +63,9 @@ To use this project, follow these steps:
 6. Save the selected Bi-LSTM model.
 
 7. Run the Flask web application to deploy the model:
-'python app.py'
-
+   ```
+   python app.py
+   ```
 8. Access the web application through the provided URL and enter the text data to obtain sentiment predictions.
 
 ## Conclusion
