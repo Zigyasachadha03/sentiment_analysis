@@ -10,15 +10,15 @@ The dataset used for this project is obtained from Kaggle's Twitter dataset, ava
 
 The project follows the following approach:
 
-### Data Preprocessing
+#### Data Preprocessing
 
 The dataset is preprocessed to clean the text, remove noise, and transform the data into a suitable format for training the models.
 
-### Naive Bayes
+#### Naive Bayes
 
 Initially, a Naive Bayes classifier is implemented to classify the sentiment of the text data. This serves as a baseline model.
 
-### Deep Learning Models
+#### Deep Learning Models
 
 To improve the performance, deep learning models are implemented using TensorFlow and Keras. The following models are trained and evaluated:
 
@@ -27,19 +27,19 @@ To improve the performance, deep learning models are implemented using TensorFlo
 - GRU (Gated Recurrent Unit)
 - Bi-LSTM (Bidirectional LSTM)
 
-### Model Evaluation
+#### Model Evaluation
 
 The trained models are evaluated using appropriate evaluation metrics such as accuracy, precision, recall, and F1 score to assess their performance.
 
-### Model Selection
+#### Model Selection
 
 Based on the evaluation results, the Bi-LSTM model is selected as the final model due to its good accuracy and performance.
 
-### Model Saving
+#### Model Saving
 
 The trained Bi-LSTM model is saved to be used for deployment.
 
-### Web Application
+#### Web Application
 
 A Flask-based web application is built to provide an interface for users to input text data and obtain sentiment predictions using the deployed Bi-LSTM model.
 
